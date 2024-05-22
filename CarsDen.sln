@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33529.622
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{0E673C0A-2A53-4D41-B027-6168C4EADB94}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{692F7248-D047-4115-A1B9-1CEAB6BA9253}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{2915DB6F-FC13-4327-BECC-1024481FB41E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BasicContent", "BasicContent", "{D8CB826D-1777-488D-8AC4-817130657BCC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CarsDen", "CarsDen", "{CF8DCF3C-0EF6-4FA2-A073-75BB87280DA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarsDen.Project.CarsDen", "src\Project\CarsDen\Website\CarsDen.Project.CarsDen.csproj", "{09AFE88B-5399-4C2D-8274-393FFAC1C6B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarsDen.Feature.BasicContent", "src\Feature\BasicContent\Website\CarsDen.Feature.BasicContent.csproj", "{F23B8522-D52F-446A-8F36-21805DD965E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09AFE88B-5399-4C2D-8274-393FFAC1C6B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09AFE88B-5399-4C2D-8274-393FFAC1C6B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09AFE88B-5399-4C2D-8274-393FFAC1C6B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09AFE88B-5399-4C2D-8274-393FFAC1C6B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F23B8522-D52F-446A-8F36-21805DD965E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F23B8522-D52F-446A-8F36-21805DD965E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F23B8522-D52F-446A-8F36-21805DD965E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F23B8522-D52F-446A-8F36-21805DD965E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D8CB826D-1777-488D-8AC4-817130657BCC} = {0E673C0A-2A53-4D41-B027-6168C4EADB94}
+		{CF8DCF3C-0EF6-4FA2-A073-75BB87280DA6} = {2915DB6F-FC13-4327-BECC-1024481FB41E}
+		{09AFE88B-5399-4C2D-8274-393FFAC1C6B9} = {CF8DCF3C-0EF6-4FA2-A073-75BB87280DA6}
+		{F23B8522-D52F-446A-8F36-21805DD965E5} = {D8CB826D-1777-488D-8AC4-817130657BCC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
+		SolutionGuid = {CBF060AA-2D3A-4888-A297-491B5DE54454}
+	EndGlobalSection
+EndGlobal
