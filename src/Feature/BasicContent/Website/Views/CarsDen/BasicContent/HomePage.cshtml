@@ -1,0 +1,16 @@
+﻿<section class="section hero" id="home">
+    <div class="container" style="margin-left: 40px;">
+
+        <div class="hero-content">
+            <h2 class="h1 hero-title">@Html.Sitecore().Field("Hero-Title")</h2>
+
+            <p class="hero-text">
+                @Html.Sitecore().Field("Hero-Text")
+            </p>
+        </div>
+
+        <div class="hero-banner">
+            @Html.Sitecore().Field("Hero-Image")
+        </div>
+    </div>
+</section>

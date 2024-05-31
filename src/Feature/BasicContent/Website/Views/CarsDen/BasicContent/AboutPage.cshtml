@@ -1,0 +1,91 @@
+﻿﻿<section class="section about">
+    <div class="container">
+        <h2 class="h2 section-title">@Html.Sitecore().Field("About-Section-Title")</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    @Html.Sitecore().Field("About-Text")
+                </p>
+            </div>
+            <div class="about-image">
+                @Html.Sitecore().Field("About-Image")
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section get-start">
+    <div class="container">
+
+        <h2 class="h2 section-title">@Html.Sitecore().Field("Get-Started")</h2>
+
+        <ul class="get-start-list">
+
+            <li>
+                <div class="get-start-card">
+
+                    <div class="card-icon icon-1">
+                        <ion-icon name="person-add-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="card-title">@Html.Sitecore().Field("Card-Title-1")</h3>
+
+                    <p class="card-text">
+                        @Html.Sitecore().Field("Card-Text-1")
+                    </p>
+
+                </div>
+            </li>
+
+            <li>
+                <div class="get-start-card">
+
+                    <div class="card-icon icon-2">
+                        <ion-icon name="car-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="card-title">@Html.Sitecore().Field("Card-Title-2")</h3>
+
+                    <p class="card-text">
+                        @Html.Sitecore().Field("Card-Text-2")
+                    </p>
+
+                </div>
+            </li>
+
+            <li>
+                <div class="get-start-card">
+
+                    <div class="card-icon icon-3">
+                        <ion-icon name="car"></ion-icon>
+                    </div>
+
+                    <h3 class="card-title">@Html.Sitecore().Field("Card-Title-3")</h3>
+
+                    <p class="card-text">
+                        @Html.Sitecore().Field("Card-Text-3")
+                    </p>
+
+                </div>
+            </li>
+
+            <li>
+                <div class="get-start-card">
+
+                    <div class="card-icon icon-4">
+                        <ion-icon name="card-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="card-title">@Html.Sitecore().Field("Card-Title-4")</h3>
+
+                    <p class="card-text">
+                        @Html.Sitecore().Field("Card-Text-4")
+                    </p>
+
+                </div>
+            </li>
+
+        </ul>
+
+    </div>
+</section>

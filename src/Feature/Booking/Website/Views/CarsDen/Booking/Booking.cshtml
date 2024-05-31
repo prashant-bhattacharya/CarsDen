@@ -1,0 +1,34 @@
+﻿@model CarsDen.Feature.Booking.Models.BookingModel
+
+<section class="section book-ride">
+    <div class="container">
+        <h2 class="h2 section-title">@Model.BookingTitle</h2>
+        <form method="post" class="book-ride-form" asp-action="BookARide">
+            <div class="input-wrapper">
+                <label for="car-model" class="input-label">@Model.CarModel</label>
+                <select name="car-model" id="car-model" class="input-field" onchange="calculateTotalPrice()">
+                    <option disabled selected>@Model.SelectCarModel</option>
+                    @foreach (var car in Model.CarModels)
+                    {
+        <option value="@car.Model.ToString()" data-rent="@car.CarRentPerDay.ToString()">@car.Model.ToString()</option>}
+                </select>
+            </div>
+            <div class="input-wrapper">
+                <label for="start-date" class="input-label">@Model.StartDate</label>
+                <input type="date" name="start-date" id="start-date" class="input-field" value="@Model.StartDateValue" min="@Model.StartDateValue" onchange="calculateTotalPrice()">
+            </div>
+            <div class="input-wrapper">
+                <label for="end-date" class="input-label">@Model.EndDate</label>
+                <input type="date" name="end-date" id="end-date" class="input-field" value="@Model.EndDateValue" min="@Model.StartDateValue" onchange="calculateTotalPrice()">
+            </div>
+            <div class="input-wrapper">
+                <label for="total-price" class="input-label">@Model.TotalPrice</label>
+                <input type="text" name="total-price" id="total-price" class="input-field" readonly>
+            </div>
+            <button type="submit" class="btn book-ride-btn">@Model.BookBtn</button>
+        </form>
+    </div>
+</section>
+
+<section id="car-card-section" class="section car-card-section" style="display: none;">
+</section>
