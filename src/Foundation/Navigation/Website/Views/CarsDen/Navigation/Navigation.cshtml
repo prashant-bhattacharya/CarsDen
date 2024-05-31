@@ -1,0 +1,53 @@
+﻿@model CarsDen.Foundation.Navigation.Models.NavigationMenu
+
+
+<header class="header" data-header>
+    <div class="container">
+
+        <div class="overlay" data-overlay></div>
+
+        <a href="@Model.HomePage.NavigationItemUrl" class="logo">
+            <img src="@Model.LogoImage" alt="@Model.LogoImageAlt">
+        </a>
+
+        <nav class="navbar" data-navbar>
+            <ul class="navbar-list">
+
+                <li>
+                    <a class="navbar-link" data-nav-link href="@Model.HomePage.NavigationItemUrl">@Model.HomePage.NavigationItemName</a>
+                </li>
+                @foreach(var nav in Model.MainNavigation)
+                {
+                    <li>
+                        <a class="navbar-link" data-nav-link href="@nav.NavItem.NavigationItemUrl">@nav.NavItem.NavigationItemName</a>
+                    </li>
+                }
+
+
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+
+            <div class="header-contact">
+                <a href="tel:18002783737" class="contact-link">1800 278 37 37</a>
+
+                <span class="contact-time">Mon - Sat: 9:00 AM - 6:00 PM</span>
+            </div>
+
+            <a class="btn" aria-labelledby="aria-label-txt" href="@Model.BookRideUrl">
+                <ion-icon name="car-outline"></ion-icon>
+
+                <span id="aria-label-txt">Book a Ride</span>
+            </a>
+
+            <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+                <span class="one"></span>
+                <span class="two"></span>
+                <span class="three"></span>
+            </button>
+
+        </div>
+
+    </div>
+</header>

@@ -1,0 +1,153 @@
+﻿@model CarsDen.Feature.BasicContent.Models.FooterModel
+
+<footer class="footer">
+    <div class="container">
+
+        <div class="footer-top">
+
+            <div class="footer-brand">
+                <a class="logo">
+                    <img src="@Model.LogoImage" alt="@Model.LogoImageAlt">
+                </a>
+
+                <p class="footer-text">
+                    @Model.CompanyDescription
+                </p>
+            </div>
+
+            <ul class="footer-list">
+
+                <li>
+                    <p class="footer-list-title">@Model.CompanyTitle</p>
+                </li>
+
+                <li>
+                    <a href="@Model.Home" class="footer-link">@Model.HomePlaceholder</a>
+                </li>
+
+                <li>
+                    <a href="@Model.About" class="footer-link">@Model.AboutPlaceholder</a>
+                </li>
+
+                <li>
+                    <a href="@Model.Featured" class="footer-link">@Model.FeaturedPlaceholder</a>
+                </li>
+
+            </ul>
+
+            <ul class="footer-list">
+
+                <li>
+                    <p class="footer-list-title">@Model.SupportTitle</p>
+                </li>
+
+                <li>
+                    <a class="footer-link">@Model.HelpCenterPlaceholder</a>
+                </li>
+
+                <li>
+                    <a class="footer-link">@Model.AskQuestionPlaceholder</a>
+                </li>
+
+                <li>
+                    <a class="footer-link">@Model.PrivacyPolicyPlaceholder</a>
+                </li>
+
+                <li>
+                    <a class="footer-link">@Model.TnCPlaceholder</a>
+                </li>
+
+            </ul>
+
+            <ul class="footer-list">
+
+                <li>
+                    <p class="footer-list-title">@Model.ServiceLocations</p>
+                </li>
+
+                <li>
+                    <a class="footer-link">@Model.Bangalore</a>
+                </li>
+
+                <li>
+                    <a class="footer-link">@Model.Mumbai</a>
+                </li>
+
+                <li>
+                    <a class="footer-link">@Model.Gurugram</a>
+                </li>
+
+                <li>
+                    <a class="footer-link">@Model.Kolkata</a>
+                </li>
+
+                <li>
+                    <a class="footer-link">@Model.Chennai</a>
+                </li>
+
+                <li>
+                    <a class="footer-link">@Model.Hyderabad</a>
+                </li>
+
+                <li>
+                    <a class="footer-link">@Model.Ahmedabad</a>
+                </li>
+
+                <li>
+                    <a class="footer-link">@Model.Kochi</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <ul class="social-list">
+
+                <li>
+                    <a class="social-link">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="social-link">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="social-link">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="social-link">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="social-link">
+                        <ion-icon name="logo-skype"></ion-icon>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="social-link">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </a>
+                </li>
+
+            </ul>
+
+            <p class="copyright">
+                @Model.Copyright
+            </p>
+
+        </div>
+
+    </div>
+</footer>
